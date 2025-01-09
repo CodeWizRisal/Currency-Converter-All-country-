@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+    <div class="form-group">
+      <input type="number" id="amount" placeholder="Amount" class="input-field" />
+      <div class="currency-selects">
+        <select id="from-currency" class="select-field">
+          <!-- Dynamically filled with currencies -->
+        </select>
+        <span class="arrow">→</span>
+        <select id="to-currency" class="select-field">
+          <!-- Dynamically filled with currencies -->
+        </select>
+      </div>
+      <button id="convert" class="convert-btn">Convert</button>
+    </div>
+    <div id="loading" class="loading">Loading...</div>
+    <h2 id="result">Result: </h2>
+    <p id="error" class="error-message">Please enter valid data.</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
